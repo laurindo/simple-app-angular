@@ -32,7 +32,7 @@ body {
 .container-table form.searchField {
   text-align: right;
   float: right;
-  padding: 20px;
+  padding: 15px;
 }
 .container-table form.searchField input,
 .container-table form.searchField .input-group-text {

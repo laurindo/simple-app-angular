@@ -1,0 +1,35 @@
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Placa</label>
+    <input ng-model="data.newVehicle.placa" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Número da placa">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">imagem</label>
+    <input ng-model="data.newVehicle.file" type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Marca</label>
+    <input ng-model="data.newVehicle.marca" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Marca">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Modelo</label>
+    <input ng-model="data.newVehicle.modelo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Modelo">
+  </div>
+  <div class="form-group">
+    <label for="inputState">Combustível</label>
+    <select ng-model="data.newVehicle.combustivel" id="inputState" class="form-control">
+      <option selected>Escolher...</option>
+      <option value="gasolina">Gasolina</option>
+      <option value="alcool">Álcool</option>
+      <option value="flex">Flex</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Valor</label>
+    <input ng-model="data.newVehicle.valor" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Valor">
+  </div>
+</form>

@@ -10,6 +10,18 @@
       console.log("test search");
     };
 
+    $scope.modalData = {
+      templateUrl: "screens/home/cadastrar-veiculo.html",
+      title: "Cadastrar Carro",
+      btnCloseLabel: "Fechar",
+      btnSaveLabel: "Salvar",
+      btnCloseCB: function() {},
+      btnSaveCB: function() {
+        $scope.vehicles.unshift($scope.modalData.newVehicle);
+      },
+      newVehicle: {}
+    };
+
     function getVehicles() {
       const successCB = function(response) {
         $scope.vehicles = response.data;

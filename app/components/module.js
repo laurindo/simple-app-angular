@@ -3,5 +3,6 @@
 angular.module("myApp.components", [
   "component.header",
   "component.table",
-  "component.searchfield"
+  "component.searchfield",
+  "component.modal"
 ]);
