@@ -1,0 +1,34 @@
+@import "./colors";
+
+#my-table {
+  background-color: @white;
+  border-radius: 5px;
+  .checkbox-area {
+    text-align: center;
+    input[type="checkbox"] {
+      /* Double-sized Checkboxes */
+      -ms-transform: scale(1.4); /* IE */
+      -moz-transform: scale(1.4); /* FF */
+      -webkit-transform: scale(1.4); /* Safari and Chrome */
+      -o-transform: scale(1.4); /* Opera */
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  &.table {
+    margin: 20px 0;
+    border: solid 1px @grey;
+    thead {
+      background-color: @tableHead;
+      tr th:first-child,
+      tr th:last-child {
+        border-radius: 5px;
+      }
+    }
+    tbody {
+      tr:hover {
+        background-color: @tableHover;
+      }
+    }
+  }
+}

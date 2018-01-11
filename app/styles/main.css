@@ -1,0 +1,81 @@
+body {
+  background-color: #e1e3e8 !important;
+}
+/* app css stylesheet */
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+.menu:before {
+  content: "[";
+}
+.menu:after {
+  content: "]";
+}
+.menu > li {
+  display: inline;
+}
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+#header .container-header {
+  background-color: #2687e9;
+  color: #fff;
+  padding: 20px 50px;
+}
+.container-table {
+  padding: 0 50px;
+}
+.container-table form.searchField {
+  text-align: right;
+  float: right;
+  padding: 20px;
+}
+.container-table form.searchField input,
+.container-table form.searchField .input-group-text {
+  padding: 15px;
+}
+.container-table .container-buttons {
+  margin: 20px 0;
+}
+.container-table .container-buttons button {
+  display: inline-block;
+  margin-right: 20px;
+}
+#my-table {
+  background-color: #fff;
+  border-radius: 5px;
+}
+#my-table .checkbox-area {
+  text-align: center;
+}
+#my-table .checkbox-area input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.4);
+  /* IE */
+  -moz-transform: scale(1.4);
+  /* FF */
+  -webkit-transform: scale(1.4);
+  /* Safari and Chrome */
+  -o-transform: scale(1.4);
+  /* Opera */
+  padding: 10px;
+  cursor: pointer;
+}
+#my-table.table {
+  margin: 20px 0;
+  border: solid 1px #ccc;
+}
+#my-table.table thead {
+  background-color: #f8fafc;
+}
+#my-table.table thead tr th:first-child,
+#my-table.table thead tr th:last-child {
+  border-radius: 5px;
+}
+#my-table.table tbody tr:hover {
+  background-color: #d8e9fb;
+}

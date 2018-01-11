@@ -1,0 +1,15 @@
+<div id="home">
+  <my-header></my-header>
+  <div class="container-table">
+    <div class="row">
+      <div class="col-sm-8 container-buttons">
+        <button type="button" class="btn btn-success btn-lg">Novo Carro</button>
+        <button type="button" class="btn btn-danger btn-lg">Excluir Carro</button>
+      </div>
+      <div class="col-sm-4">
+        <my-searchfield onChangeSearch="onSearch(p)"></my-searchfield>
+      </div>
+    </div>
+    <my-table data="dataToRenderTable"></my-table>
+  </div>
+</div>
